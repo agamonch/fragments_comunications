@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import kg.unicapp.frtofr.databinding.FragmentABinding
+import kg.unicapp.frtofr.databinding.FragmentABinding.bind
 
 
 class FragmentA: Fragment(R.layout.fragment_a) {
@@ -16,7 +17,7 @@ class FragmentA: Fragment(R.layout.fragment_a) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val binding = FragmentABinding.bind(view)
+        val binding = bind(view)
         fragmentBlankBinding = binding
         binding.button5.setOnClickListener{
             val text = binding.editTextTextPersonName4.text.toString()
